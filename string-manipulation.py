@@ -14,7 +14,11 @@ dataList = list()
 
 # split each line at the first space and keep the end, add to dataList
 for line in data :
+	# http://www.tutorialspoint.com/python/string_split.htm
+	# https://docs.python.org/2/library/string.html#string.split
 	lineItem = line.split(' ', 1)[-1]
+	# https://docs.python.org/2/library/string.html#string.rstrip
+	# https://docs.python.org/2/library/string.html#string.strip
 	dataList.append(lineItem.rstrip())
 
 # join items from dataList separated by comma + space
